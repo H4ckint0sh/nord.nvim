@@ -40,7 +40,8 @@ function nord.load(opts)
       require("nord.plugins.neogit").highlights(),
       require("nord.plugins.glance").highlights(),
       require("nord.plugins.mini").highlights(),
-      require("nord.plugins.markview").highlights()
+      require("nord.plugins.markview").highlights(),
+      require("nord.plugins.snacks").highlights()
   end)
 
   vim.g.colors_name = "nord"
