@@ -15,10 +15,10 @@ function lsp.highlights()
     DiagnosticInfo = { fg = c.frost.ice }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
     DiagnosticHint = { fg = c.frost.artic_water }, -- Used as the base highlight group. Other Diagnostic highlights link to this by default
 
-    DiagnosticVirtualTextError = { bg = utils.darken(c.aurora.red, 0.1), fg = c.aurora.red }, -- Used for "Error" diagnostic virtual text
-    DiagnosticVirtualTextWarn = { bg = utils.darken(c.aurora.yellow, 0.1), fg = c.aurora.yellow }, -- Used for "Warning" diagnostic virtual text
-    DiagnosticVirtualTextInfo = { bg = utils.darken(c.frost.ice, 0.1), fg = c.frost.ice }, -- Used for "Information" diagnostic virtual text
-    DiagnosticVirtualTextHint = { bg = utils.darken(c.frost.artic_water, 0.1), fg = c.frost.artic_water }, -- Used for "Hint" diagnostic virtual text
+    DiagnosticVirtualTextError = { fg = c.aurora.red }, -- Used for "Error" diagnostic virtual text
+    DiagnosticVirtualTextWarn = { fg = c.aurora.yellow }, -- Used for "Warning" diagnostic virtual text
+    DiagnosticVirtualTextInfo = { fg = c.frost.ice }, -- Used for "Information" diagnostic virtual text
+    DiagnosticVirtualTextHint = { fg = c.frost.artic_water }, -- Used for "Hint" diagnostic virtual text
 
     DiagnosticUnderlineError = { undercurl = true, sp = c.aurora.red }, -- Used to underline "Error" diagnostics
     DiagnosticUnderlineWarn = { undercurl = true, sp = c.aurora.yellow }, -- Used to underline "Warning" diagnostics
