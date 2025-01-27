@@ -21,7 +21,7 @@ function cmp.highlights()
     BlinkCmpMenuBorder = { fg = c.polar_night.bright },
     BlinkCmpMenuSelection = { fg = c.none, bg = c.polar_night.brighter },
     BlinkCmpLabelDeprecated = { fg = c.polar_night.light },
-    BlinkCmpLabelMatch = { fg = c.polar_night.ice, bold = true },
+    BlinkCmpLabelMatch = { fg = c.frost.ice, bold = false },
     BlinkCmpGhostText = { fg = c.polar_night.light },
     BlinkCmpDocBorder = { fg = c.polar_night.bright },
     BlinkCmpSignatureHelpBorder = { fg = c.polar_night.bright },
