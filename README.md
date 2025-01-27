@@ -1,5 +1,7 @@
 # 🖌️ nord.nvim
 
+> ⚠️ **Warning**: This is created mainly for personal use!
+
 Neovim theme using the [Nord palette](https://www.nordtheme.com/) that tries to
 be as close as possible to the [official vim theme](https://github.com/arcticicestudio/nord-vim/)
 and [the official vscode theme](https://github.com/arcticicestudio/nord-visual-studio-code).
