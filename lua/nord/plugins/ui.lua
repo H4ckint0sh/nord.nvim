@@ -5,7 +5,7 @@ local c = require("nord.colors").palette
 function ui.highlights()
   return {
     -- folke/which-key.nvim
-    WhichKey = { fg = c.frost.ice, bold = true },
+    WhichKey = { fg = c.frost.ice, bold = false },
     WhichKeyGroup = { fg = c.frost.artic_water },
     WhichKeyDesc = { fg = c.snow_storm.origin },
     WhichKeyFloat = { bg = c.polar_night.bright },

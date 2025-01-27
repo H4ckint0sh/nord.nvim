@@ -29,7 +29,7 @@ function lsp.highlights()
     LspInlayHint = { fg = c.polar_night.brightest },
 
     -- ray-x/lsp_signature.nvim
-    LspSignatureActiveParameter = { bg = c.polar_night.brighter, bold = true },
+    LspSignatureActiveParameter = { bg = c.polar_night.brighter, bold = false },
 
     -- LspTrouble
     TroubleText = { fg = c.snow_storm.origin },

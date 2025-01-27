@@ -5,8 +5,8 @@ local c = require("nord.colors").palette
 function cmp.highlights()
   return {
     CmpItemAbbrDeprecated = { fg = c.polar_night.light },
-    CmpItemAbbrMatch = { fg = c.frost.ice, bold = true },
-    CmpItemAbbrMatchFuzzy = { fg = c.frost.ice, bold = true },
+    CmpItemAbbrMatch = { fg = c.frost.ice, bold = false },
+    CmpItemAbbrMatchFuzzy = { fg = c.frost.ice, bold = false },
     CmpItemKind = { fg = c.frost.artic_water },
     CmpItemKindVariable = { fg = c.frost.ice },
     CmpItemKindInterface = { fg = c.frost.ice },

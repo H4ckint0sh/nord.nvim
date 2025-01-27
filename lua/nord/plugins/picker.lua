@@ -6,12 +6,12 @@ local utils = require("nord.utils")
 function picker.highlights()
   return {
     TelescopeBorder = { fg = c.polar_night.light, bg = utils.make_global_bg(true) },
-    TelescopeTitle = { fg = c.snow_storm.origin, bold = true },
+    TelescopeTitle = { fg = c.snow_storm.origin, bold = false },
     TelescopePromptCounter = { fg = c.polar_night.light },
-    TelescopeMatching = { fg = c.frost.ice, bold = true },
+    TelescopeMatching = { fg = c.frost.ice, bold = false },
 
     FzfLuaBorder = { fg = c.polar_night.light, bg = utils.make_global_bg() },
-    FzfLuaTitle = { fg = c.snow_storm.origin, bold = true },
+    FzfLuaTitle = { fg = c.snow_storm.origin, bold = false },
     FzfLuaHeaderBind = { fg = c.frost.ice },
     FzfLuaHeaderText = { fg = c.frost.artic_ocean },
     FzfLuaPathColNr = { fg = c.frost.ice },

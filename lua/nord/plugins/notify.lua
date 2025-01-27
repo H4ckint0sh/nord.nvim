@@ -29,7 +29,7 @@ function notify.highlights()
     NotifyBackground = { bg = utils.make_global_bg() },
 
     -- vigoux/notifier.nvim
-    NotifierTitle = { fg = c.frost.polar_water, bold = true },
+    NotifierTitle = { fg = c.frost.polar_water, bold = false },
     NotifierContentDim = { fg = c.polar_night.light },
   }
 end

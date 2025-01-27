@@ -27,8 +27,8 @@ function defaluts.highlights()
     SignColumn = { fg = c.polar_night.bright, bg = utils.make_global_bg(true) }, -- column where |signs| are displayed
     -- Substitute = { link = "Search" }, -- |:substitute| replacement text highlighting
     LineNr = { fg = c.polar_night.brightest, bg = c.none }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
-    CursorLineNr = { fg = c.snow_storm.origin, bold = true }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
-    MatchParen = { bg = c.polar_night.brightest, bold = true }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
+    CursorLineNr = { fg = c.snow_storm.origin, bold = false }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
+    MatchParen = { bg = c.polar_night.brightest, bold = false }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
     ModeMsg = { fg = c.snow_storm.origin }, -- 'showmode' message (e.g., "-- INSERT -- ")
     MsgArea = {}, -- Area for messages and cmdline
     MsgSeparator = {}, -- Separator for scrolled messages, `msgsep` flag of 'display'
@@ -58,7 +58,7 @@ function defaluts.highlights()
     TabLine = { fg = c.snow_storm.origin, bg = c.fg_gutter }, -- tab pages line, not active tab page label
     TabLineFill = { fg = c.snow_storm.origin, bg = c.polar_night.bright }, -- tab pages line, where there are no labels
     TabLineSel = { fg = c.frost.ice, bg = c.polar_night.brightest }, -- tab pages line, active tab page label
-    Title = { fg = c.snow_storm.origin, bold = true }, -- titles for output from ":set all", ":autocmd" etc.
+    Title = { fg = c.snow_storm.origin, bold = false }, -- titles for output from ":set all", ":autocmd" etc.
     Visual = { fg = c.none, bg = c.polar_night.brighter }, -- Visual mode selection
     VisualNOS = { fg = c.none, bg = c.polar_night.brighter }, -- Visual mode selection when vim is "Not Owning the Selection".
     WarningMsg = { fg = c.polar_night.origin, bg = c.aurora.yellow }, -- warning messages

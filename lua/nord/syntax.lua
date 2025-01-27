@@ -7,7 +7,7 @@ function base.highlights()
   local options = require("nord.config").options
 
   return {
-    Bold = { bold = true },
+    Bold = { bold = false },
     Boolean = { fg = c.frost.artic_water }, --  a boolean constant: TRUE, false
     Character = { fg = c.aurora.green }, --  a character constant: 'c', '\n'
     Conditional = { fg = c.frost.artic_water }, --  if, then, else, endif, switch, etc.
@@ -47,13 +47,13 @@ function base.highlights()
     -- ("Ignore", below, may be invisible...)
     -- Ignore = { }, -- (preferred) left blank, hidden  |hl-Ignore|
 
-    htmlH1 = { fg = c.frost.ice, bold = true },
+    htmlH1 = { fg = c.frost.ice, bold = false },
     htmlH2 = { fg = c.frost.ice },
 
     markdownHeadingDelimiter = { fg = c.frost.polar_water },
     markdownCode = { fg = c.frost.polar_water },
     markdownCodeBlock = { fg = c.snow_storm.origin },
-    markdownH1 = { fg = c.frost.ice, bold = true },
+    markdownH1 = { fg = c.frost.ice, bold = false },
     markdownH2 = { fg = c.frost.ice },
     markdownLinkText = { fg = c.frost.ice, underline = true },
     markdownBlockquote = { fg = c.frost.polar_water },
