@@ -8,11 +8,6 @@ and [the official vscode theme](https://github.com/arcticicestudio/nord-visual-s
 
 > "Arctic, north-bluish clean and elegant" - arcticicestudio
 
-![2022-12-01-142011_1277x703_scrot](https://user-images.githubusercontent.com/3751019/205092735-ced8ba05-d15d-4751-9a88-17cefef5ec52.png)
-![2022-12-01-142157_1270x700_scrot](https://user-images.githubusercontent.com/3751019/205092727-a266d2c8-35fd-4272-b90f-c1f063591e58.png)
-![2022-12-01-142111_1276x700_scrot](https://user-images.githubusercontent.com/3751019/205092730-9874369f-d045-47c6-8b07-5371cf344223.png)
-![2022-12-01-142044_1265x634_scrot](https://user-images.githubusercontent.com/3751019/205092733-3aebea83-c5a8-4e96-ab2e-a4646cc9e3ea.png)
-
 ## ✨ Features
 
 - supports TreeSitter and LSP
