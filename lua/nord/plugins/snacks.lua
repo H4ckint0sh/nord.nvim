@@ -6,13 +6,10 @@ function snacks.highlights()
   return {
     SnacksDashboardDir = { link = "Comment" },
     SnacksPickerTotals = { link = "Comment" },
-    SnacksPickerDir = { link = "Normal" },
+    SnacksPickerDir = { link = "Comment" },
     SnacksPickerBufFlags = { link = "Comment" },
     SnacksPickerKeymapRhs = { link = "Comment" },
     SnacksPickerGitStatus = { link = "Comment" },
-    SnacksIndent = { link = "Normal" },
-    SnacksPickerCol = { link = "Normal" },
-    SnacksPickerIndent = { link = "Normal" },
   }
 end
 
