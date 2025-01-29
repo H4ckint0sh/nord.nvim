@@ -16,7 +16,7 @@ function defaluts.highlights()
     CursorLine = { bg = c.polar_night.bright }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
     Directory = { fg = c.frost.ice }, -- directory names (and other special names in listings)
     EndOfBuffer = { fg = c.polar_night.bright }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
-    ErrorMsg = { fg = c.snow_storm.origin, bg = c.aurora.red }, -- error messages on the command line
+    ErrorMsg = { fg = c.snow_storm.origin, bg = c.none }, -- error messages on the command line
     VertSplit = { fg = options.borders and c.polar_night.bright or c.polar_night.origin, bg = c.none }, -- the column separating vertically split windows
     WinSeparator = {
       fg = options.borders and c.polar_night.bright or c.polar_night.origin,
@@ -55,13 +55,13 @@ function defaluts.highlights()
     SpellRare = { fg = c.snow_storm.brightest, bg = global_bg, sp = c.snow_storm.brightest, undercurl = true }, -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
     StatusLine = { fg = c.frost.ice, bg = c.polar_night.brighter }, -- status line of current window
     StatusLineNC = { fg = c.snow_storm.origin, bg = c.polar_night.brightest }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
-    TabLine = { fg = c.snow_storm.origin, bg = c.fg_gutter }, -- tab pages line, not active tab page label
+    TabLine = { fg = c.snow_storm.origin, bg = c.polar_night.origin }, -- tab pages line, not active tab page label
     TabLineFill = { fg = c.snow_storm.origin, bg = c.polar_night.bright }, -- tab pages line, where there are no labels
     TabLineSel = { fg = c.frost.ice, bg = c.polar_night.brightest }, -- tab pages line, active tab page label
     Title = { fg = c.snow_storm.origin, bold = false }, -- titles for output from ":set all", ":autocmd" etc.
     Visual = { fg = c.none, bg = c.polar_night.brighter }, -- Visual mode selection
     VisualNOS = { fg = c.none, bg = c.polar_night.brighter }, -- Visual mode selection when vim is "Not Owning the Selection".
-    WarningMsg = { fg = c.polar_night.origin, bg = c.aurora.yellow }, -- warning messages
+    WarningMsg = { fg = c.polar_night.origin, bg = c.none }, -- warning messages
     Whitespace = { fg = c.polar_night.brighter }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
     WildMenu = { fg = c.frost.ice, bg = c.polar_night.bright }, -- current match in 'wildmenu' completion
     qfLineNr = { fg = c.frost.artic_water },
