@@ -25,8 +25,8 @@ function lsp.highlights()
     DiagnosticUnderlineInfo = { undercurl = true, sp = c.frost.ice }, -- Used to underline "Information" diagnostics
     DiagnosticUnderlineHint = { undercurl = true, sp = c.frost.artic_water }, -- Used to underline "Hint" diagnostics
 
-    LspCodeLens = { fg = c.polar_night.brightest },
-    LspInlayHint = { fg = c.polar_night.brightest },
+    LspCodeLens = { link = "Comment" },
+    LspInlayHint = { link = "Comment" },
 
     -- ray-x/lsp_signature.nvim
     LspSignatureActiveParameter = { bg = c.polar_night.brighter, bold = false },
