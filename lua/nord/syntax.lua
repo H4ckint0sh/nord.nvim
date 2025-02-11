@@ -27,7 +27,7 @@ function base.highlights()
     Keyword = vim.tbl_extend("force", { fg = c.frost.artic_water }, options.styles.keywords), --  any other keyword
     Label = { fg = c.frost.artic_water }, --    case, default, etc.
     Macro = { link = "Define" }, --    same as Define
-    Number = { fg = c.aurora.purple }, --   a number constant: 234, 0xff
+    Number = { fg = c.aurora.yellow }, --   a number constant: 234, 0xff
     Operator = { fg = c.frost.artic_water }, -- "sizeof", "+", "*", etc.
     PreCondit = { link = "PreProc" }, --  preprocessor #if, #else, #endif, etc.
     PreProc = { fg = c.frost.artic_water }, -- (preferred) generic Preprocessor
