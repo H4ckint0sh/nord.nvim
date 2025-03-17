@@ -24,6 +24,7 @@ function lsp.highlights()
     DiagnosticUnderlineWarn = { undercurl = true, sp = c.aurora.yellow }, -- Used to underline "Warning" diagnostics
     DiagnosticUnderlineInfo = { undercurl = true, sp = c.frost.ice }, -- Used to underline "Information" diagnostics
     DiagnosticUnderlineHint = { undercurl = true, sp = c.frost.artic_water }, -- Used to underline "Hint" diagnostics
+    DiagnosticUnnecessary = { link = "Comment" }, -- Used to underline unnecessary documents
 
     LspCodeLens = { link = "Comment" },
     LspInlayHint = { link = "Comment" },
