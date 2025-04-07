@@ -1,6 +1,8 @@
 # 🖌️ nord.nvim
 
-> ⚠️ **Warning**: This is created mainly for personal use!
+> [!IMPORTANT]
+>
+> > ⚠️This is created mainly for personal use!
 
 Neovim theme using the [Nord palette](https://www.nordtheme.com/) that tries to
 be as close as possible to the [official vim theme](https://github.com/arcticicestudio/nord-vim/)
@@ -62,7 +64,7 @@ Install the theme with your preferred package manager:
 ```lua
 require("lazy").setup({
   {
-    "gbprod/nord.nvim",
+    "H4ckint0sh/nord.nvim",
     lazy = false,
     priority = 1000,
     config = function()
