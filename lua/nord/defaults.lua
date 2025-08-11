@@ -9,24 +9,27 @@ function defaluts.highlights()
 
   return {
     ColorColumn = { bg = c.polar_night.bright }, -- used for the columns set with 'colorcolumn'
-    Conceal = { fg = c.none, bg = c.none }, -- placeholder characters substituted for concealed text (see 'conceallevel')
-    Cursor = { fg = c.snow_storm.origin, bg = c.none, reverse = true }, -- the character under the cursor
-    CursorIM = { fg = c.snow_storm.brighter, bg = c.none, reverse = true }, -- like Cursor, but used when in IME mode
+    Conceal = { fg = c.polar_night.light, bg = c.none }, -- placeholder characters substituted for concealed text (see 'conceallevel')
+    Cursor = { fg = c.snow_storm.origin, bg = utils.make_global_bg(options.transparetn), reverse = true }, -- the character under the cursor
+    CursorIM = { fg = c.snow_storm.brighter, bg = utils.make_global_bg(options.transparetn), reverse = true }, -- like Cursor, but used when in IME mode
     CursorColumn = { bg = c.polar_night.bright }, -- Screen-column at the cursor, when 'cursorcolumn' is set.
     CursorLine = { bg = c.polar_night.bright }, -- Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
     Directory = { fg = c.frost.ice }, -- directory names (and other special names in listings)
     EndOfBuffer = { fg = c.polar_night.bright }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
-    ErrorMsg = { fg = c.snow_storm.origin, bg = c.none }, -- error messages on the command line
-    VertSplit = { fg = options.borders and c.polar_night.bright or c.polar_night.origin, bg = c.none }, -- the column separating vertically split windows
+    ErrorMsg = { fg = c.snow_storm.origin, bg = utils.make_global_bg(options.transparetn) }, -- error messages on the command line
+    VertSplit = {
+      fg = options.borders and c.polar_night.bright or c.polar_night.origin,
+      bg = utils.make_global_bg(options.transparetn),
+    }, -- the column separating vertically split windows
     WinSeparator = {
       fg = options.borders and c.polar_night.bright or c.polar_night.origin,
-      bg = c.none,
+      bg = utils.make_global_bg(options.transparetn),
     }, -- Separators between window splits.
     Folded = { fg = c.snow_storm.brightest, bg = c.polar_night.bright }, -- line used for closed folds
     FoldColumn = { fg = c.polar_night.brightest, bg = global_bg }, -- 'foldcolumn'
     SignColumn = { fg = c.polar_night.bright, bg = utils.make_global_bg(true) }, -- column where |signs| are displayed
     -- Substitute = { link = "Search" }, -- |:substitute| replacement text highlighting
-    LineNr = { fg = c.polar_night.brightest, bg = c.none }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
+    LineNr = { fg = c.polar_night.brightest, bg = utils.make_global_bg(options.transparetn) }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
     CursorLineNr = { fg = c.snow_storm.origin, bold = false }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
     MatchParen = { bg = c.polar_night.brightest, bold = false }, -- The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
     ModeMsg = { fg = c.snow_storm.origin }, -- 'showmode' message (e.g., "-- INSERT -- ")
@@ -42,9 +45,9 @@ function defaluts.highlights()
     PmenuSbar = { fg = c.snow_storm.origin, bg = c.polar_night.brighter }, -- Popup menu: scrollbar.
     PmenuThumb = { fg = c.frost.ice, bg = c.polar_night.brightest }, -- Popup menu: Thumb of the scrollbar.
     Question = { fg = c.snow_storm.origin }, -- |hit-enter| prompt and yes/no questions
-    QuickFixLine = { fg = c.snow_storm.origin, bg = c.none, reverse = true }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
+    QuickFixLine = { fg = c.snow_storm.origin, bg = utils.make_global_bg(options.transparetn), reverse = true }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
     Search = options.search.theme == "vscode" and { fg = c.none, bg = utils.darken(c.frost.ice, 0.2) }
-      or { fg = c.frost.ice, bg = c.none, reverse = true }, -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
+      or { fg = c.frost.ice, bg = utils.make_global_bg(options.transparetn), reverse = true }, -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
     IncSearch = options.search.theme == "vscode" and { fg = c.snow_storm.origin, bg = utils.darken(c.frost.ice, 0.5) }
       or { fg = c.snow_storm.brightest, bg = c.frost.ice }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
     CurSearch = { link = "IncSearch" },
@@ -61,7 +64,7 @@ function defaluts.highlights()
     Title = { fg = c.snow_storm.origin, bold = false }, -- titles for output from ":set all", ":autocmd" etc.
     Visual = { fg = c.none, bg = c.polar_night.brighter }, -- Visual mode selection
     VisualNOS = { fg = c.none, bg = c.polar_night.brighter }, -- Visual mode selection when vim is "Not Owning the Selection".
-    WarningMsg = { fg = c.polar_night.origin, bg = c.none }, -- warning messages
+    WarningMsg = { fg = c.polar_night.origin, bg = utils.make_global_bg(options.transparetn) }, -- warning messages
     Whitespace = { fg = c.polar_night.brighter }, -- "nbsp", "space", "tab" and "trail" in 'listchars'
     WildMenu = { fg = c.frost.ice, bg = c.polar_night.bright }, -- current match in 'wildmenu' completion
     qfLineNr = { fg = c.frost.artic_water },

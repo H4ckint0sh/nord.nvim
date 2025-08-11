@@ -35,9 +35,9 @@ function lsp.highlights()
     -- LspTrouble
     TroubleText = { fg = c.snow_storm.origin },
     TroubleCount = { fg = c.frost.ice, bg = c.polar_night.brightest },
-    TroubleNormal = { fg = c.snow_storm.origin, bg = c.none },
-    TroubleIndent = { fg = c.polar_night.light, bg = c.none },
-    TroubleLocation = { fg = c.polar_night.light, bg = c.none },
+    TroubleNormal = { fg = c.snow_storm.origin, bg = utils.make_global_bg() },
+    TroubleIndent = { fg = c.polar_night.light, bg = utils.make_global_bg() },
+    TroubleLocation = { fg = c.polar_night.light, bg = utils.make_global_bg() },
   }
 end
 

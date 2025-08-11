@@ -1,6 +1,8 @@
 local terminal = {}
 
 local c = require("nord.colors").palette
+local utils = require("nord.utils")
+local options = require("nord.config").options
 
 function terminal.apply()
   -- dark
@@ -34,8 +36,8 @@ end
 function terminal.highlights()
   return {
 
-    TermCursor = { fg = c.snow_storm.origin, bg = c.none, reverse = true }, -- cursor in a focused terminal
-    TermCursorNC = { fg = c.polar_night.brightest, bg = c.none, reverse = true }, -- cursor in an unfocused terminal
+    TermCursor = { fg = c.snow_storm.origin, bg = utils.make_global_bg(options.transparetn), reverse = true }, -- cursor in a focused terminal
+    TermCursorNC = { fg = c.polar_night.brightest, bg = utils.make_global_bg(options.transparetn), reverse = true }, -- cursor in an unfocused terminal
   }
 end
 

@@ -134,7 +134,7 @@ function treesitter.highlights()
     ["@tag.delimiter"] = { fg = c.frost.artic_water }, --  XML tag delimiters
 
     -- Conceal
-    ["@conceal"] = { fg = c.none, bg = c.none }, --  for captures that are only used for concealing
+    ["@conceal"] = { fg = c.polar_night.light, bg = c.none }, --  for captures that are only used for concealing
 
     -- Spell
     -- ["@spell"] = {}, --  for defining regions to be spellchecked
