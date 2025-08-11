@@ -6,6 +6,8 @@ and [the official vscode theme](https://github.com/arcticicestudio/nord-visual-s
 
 > "Arctic, north-bluish clean and elegant" - arcticicestudio
 
+![Screenshot](screenshots/screenshot.png)
+
 ## ✨ Features
 
 - supports TreeSitter and LSP
