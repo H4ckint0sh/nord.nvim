@@ -44,7 +44,10 @@ local function hexToRgb(color)
 end
 
 function utils.blend(foreground, background, alpha)
-  alpha = type(alpha) == "string" and (tonumber(alpha, 16) / 0xff) or alpha
+  alpha = type(alpha) == "string" and (
+      tonumber(alpha, 16)--[[@cast -?]]
+      / 0xff
+    ) or alpha
   local bg = hexToRgb(background)
   local fg = hexToRgb(foreground)
 
