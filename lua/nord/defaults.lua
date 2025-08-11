@@ -25,7 +25,7 @@ function defaluts.highlights()
       fg = options.borders and c.polar_night.bright or c.polar_night.origin,
       bg = utils.make_global_bg(options.transparetn),
     }, -- Separators between window splits.
-    Folded = { fg = c.snow_storm.brightest, bg = c.polar_night.bright }, -- line used for closed folds
+    Folded = { fg = c.frost.ice, bg = c.polar_night.bright }, -- line used for closed folds
     FoldColumn = { fg = c.polar_night.brightest, bg = global_bg }, -- 'foldcolumn'
     SignColumn = { fg = c.polar_night.bright, bg = utils.make_global_bg(options.transparent) }, -- column where |signs| are displayed
     -- Substitute = { link = "Search" }, -- |:substitute| replacement text highlighting
