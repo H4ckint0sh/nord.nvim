@@ -218,6 +218,8 @@ require("toggleterm").setup(
 
 ## 🎉 Credits
 
+- [gbprod/nord.nvim](https://github.com/gbprod/nord.nvim): idea
+- [Isrothy/nord.nvim](https://github.com/Isrothy/nord.nvim): cache
 - [shaunsingh/nord.nvim](https://github.com/shaunsingh/nord.nvim): pretty good
   Nord theme for Neovim but too far from original and requires too much
   customisation for me.
