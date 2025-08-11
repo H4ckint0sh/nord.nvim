@@ -1,19 +1,21 @@
 local git = {}
 
 local c = require("nord.colors").palette
+local utils = require("nord.utils")
+local options = require("nord.config").options
 
 function git.highlights()
   return {
     -- airblade/vim-gitgutter
-    GitGutterAdd = { fg = c.aurora.green },
-    GitGutterChange = { fg = c.aurora.yellow },
-    GitGutterDelete = { fg = c.aurora.red },
+    GitGutterAdd = { fg = c.aurora.green, bg = utils.make_global_bg(options.transparent) },
+    GitGutterChange = { fg = c.aurora.yellow, bg = utils.make_global_bg(options.transparent) },
+    GitGutterDelete = { fg = c.aurora.red, bg = utils.make_global_bg(options.transparent) },
 
     -- lewis6991/gitsigns.nvim
-    GitSignsAdd = { fg = c.aurora.green },
-    GitSignsChange = { fg = c.aurora.yellow },
-    GitSignsDelete = { fg = c.aurora.red },
-    GitSignsCurrentLineBlame = { fg = c.polar_night.light },
+    GitSignsAdd = { fg = c.aurora.green, bg = utils.make_global_bg(options.transparent) },
+    GitSignsChange = { fg = c.aurora.yellow, bg = utils.make_global_bg(options.transparent) },
+    GitSignsDelete = { fg = c.aurora.red, bg = utils.make_global_bg(options.transparent) },
+    GitSignsCurrentLineBlame = { fg = c.polar_night.light, bg = utils.make_global_bg(options.transparent) },
 
     -- isakbm/gitgraph.nvim
     GitGraphHash = { fg = c.aurora.purple },

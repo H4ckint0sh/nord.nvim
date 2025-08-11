@@ -27,7 +27,7 @@ function defaluts.highlights()
     }, -- Separators between window splits.
     Folded = { fg = c.snow_storm.brightest, bg = c.polar_night.bright }, -- line used for closed folds
     FoldColumn = { fg = c.polar_night.brightest, bg = global_bg }, -- 'foldcolumn'
-    SignColumn = { fg = c.polar_night.bright, bg = utils.make_global_bg(true) }, -- column where |signs| are displayed
+    SignColumn = { fg = c.polar_night.bright, bg = utils.make_global_bg(options.transparent) }, -- column where |signs| are displayed
     -- Substitute = { link = "Search" }, -- |:substitute| replacement text highlighting
     LineNr = { fg = c.polar_night.brightest, bg = utils.make_global_bg(options.transparetn) }, -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
     CursorLineNr = { fg = c.snow_storm.origin, bold = false }, -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
@@ -37,7 +37,7 @@ function defaluts.highlights()
     MsgSeparator = {}, -- Separator for scrolled messages, `msgsep` flag of 'display'
     MoreMsg = { fg = c.frost.ice }, -- |more-prompt|
     NonText = { fg = c.polar_night.brighter }, -- '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
-    Normal = { fg = c.snow_storm.origin, bg = utils.make_global_bg(true) }, -- normal text
+    Normal = { fg = c.snow_storm.origin, bg = utils.make_global_bg(options.transparent) }, -- normal text
     NormalFloat = { fg = c.snow_storm.origin, bg = global_bg }, -- Normal text in floating windows.
     FloatBorder = { fg = c.polar_night.brightest, bg = global_bg }, -- Borders of floating windows
     Pmenu = { fg = c.snow_storm.origin, bg = c.polar_night.bright }, -- Popup menu: normal item.

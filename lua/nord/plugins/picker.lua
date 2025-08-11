@@ -2,10 +2,11 @@ local picker = {}
 
 local c = require("nord.colors").palette
 local utils = require("nord.utils")
+local options = require("nord.config").options
 
 function picker.highlights()
   return {
-    TelescopeBorder = { fg = c.polar_night.light, bg = utils.make_global_bg(true) },
+    TelescopeBorder = { fg = c.polar_night.light, bg = utils.make_global_bg(options.transparent) },
     TelescopeTitle = { fg = c.snow_storm.origin, bold = false },
     TelescopePromptCounter = { fg = c.polar_night.light },
     TelescopeMatching = { fg = c.frost.ice, bold = false },
