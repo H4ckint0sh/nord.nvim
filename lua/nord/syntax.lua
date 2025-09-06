@@ -40,7 +40,7 @@ function base.highlights()
     String = { fg = c.aurora.green }, --   a string constant: "this is a string"
     Structure = { fg = c.frost.artic_water }, --  struct, union, enum, etc.
     Tag = { fg = c.snow_storm.origin }, --    you can use CTRL-] on this
-    Todo = { fg = c.aurora.yellow, bg = utils.make_global_bg(options.transparetn) }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+    Todo = { fg = c.aurora.yellow, bg = utils.make_global_bg(options.transparent) }, -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
     Type = { fg = c.frost.artic_water }, -- (preferred) int, long, char, etc.
     Typedef = { fg = c.frost.artic_water }, --  A typedef
     Underlined = { underline = true }, -- (preferred) text that stands out, HTML links
