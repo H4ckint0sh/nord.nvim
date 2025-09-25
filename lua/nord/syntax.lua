@@ -32,7 +32,7 @@ function base.highlights()
     PreCondit = { link = "PreProc" }, --  preprocessor #if, #else, #endif, etc.
     PreProc = { fg = c.frost.artic_water }, -- (preferred) generic Preprocessor
     Repeat = { fg = c.frost.artic_water }, --   for, do, while, etc.
-    Special = { fg = c.snow_storm.origin }, -- (preferred) any special symbol
+    Special = { fg = c.frost.ice }, -- (preferred) any special symbol
     SpecialChar = { fg = c.aurora.yellow }, --  special character in a constant
     SpecialComment = { fg = c.frost.ice }, -- special things inside a comment
     Statement = { fg = c.frost.artic_water }, -- (preferred) any statement
