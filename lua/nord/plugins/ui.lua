@@ -124,8 +124,6 @@ function ui.highlights()
     IlluminatedWordText = { fg = c.none, bg = c.polar_night.brightest },
     IlluminatedWordRead = { fg = c.none, bg = c.polar_night.brightest },
     IlluminatedWordWrite = { fg = c.none, bg = c.polar_night.brightest },
-
-    SnacksDashboardDir = { link = "Comment" },
   }
 end
 
