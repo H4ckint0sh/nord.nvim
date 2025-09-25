@@ -40,7 +40,7 @@ function defaluts.highlights()
     Normal = { fg = c.snow_storm.origin, bg = utils.make_global_bg(options.transparent) }, -- normal text
     NormalFloat = { fg = c.snow_storm.origin, bg = global_bg }, -- Normal text in floating windows.
     FloatBorder = { fg = c.polar_night.brightest, bg = global_bg }, -- Borders of floating windows
-    Pmenu = { fg = c.snow_storm.origin, bg = c.polar_night.bright }, -- Popup menu: normal item.
+    Pmenu = { fg = c.snow_storm.origin, bg = c.polar_night.origin }, -- Popup menu: normal item.
     PmenuSel = { fg = c.snow_storm.origin, bg = c.polar_night.brighter }, -- Popup menu: selected item.
     PmenuSbar = { fg = c.snow_storm.origin, bg = c.polar_night.brighter }, -- Popup menu: scrollbar.
     PmenuThumb = { fg = c.frost.ice, bg = c.polar_night.brightest }, -- Popup menu: Thumb of the scrollbar.
@@ -48,15 +48,14 @@ function defaluts.highlights()
     QuickFixLine = { fg = c.snow_storm.origin, bg = utils.make_global_bg(options.transparent), reverse = true }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
     Search = options.search.theme == "vscode" and { fg = c.none, bg = utils.darken(c.frost.ice, 0.2) }
       or { fg = c.frost.ice, bg = utils.make_global_bg(options.transparent), reverse = true }, -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
-    IncSearch = options.search.theme == "vscode" and { fg = c.snow_storm.origin, bg = utils.darken(c.frost.ice, 0.5) }
-      or { fg = c.snow_storm.brightest, bg = c.frost.ice }, -- 'incsearch' highlighting; also used for the text replaced with ":s///c"
+    IncSearch = { fg = c.frost.ice },
     CurSearch = { link = "IncSearch" },
     SpecialKey = { fg = c.polar_night.brightest }, -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
     SpellBad = { sp = c.aurora.red, undercurl = true }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
     SpellCap = { sp = c.aurora.yellow, undercurl = true }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
     SpellLocal = { sp = c.snow_storm.brighter, undercurl = true }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
     SpellRare = { fg = c.snow_storm.brightest, bg = global_bg, sp = c.snow_storm.brightest, undercurl = true }, -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
-    StatusLine = { fg = c.frost.ice, bg = c.polar_night.brighter }, -- status line of current window
+    StatusLine = { fg = c.frost.ice, bg = global_bg }, -- status line of current window
     StatusLineNC = { fg = c.snow_storm.origin, bg = c.polar_night.brightest }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
     TabLine = { fg = c.snow_storm.origin, bg = c.polar_night.origin }, -- tab pages line, not active tab page label
     TabLineFill = { fg = c.snow_storm.origin, bg = c.polar_night.bright }, -- tab pages line, where there are no labels

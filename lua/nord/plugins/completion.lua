@@ -18,7 +18,7 @@ function cmp.highlights()
 
     CodeiumSuggestion = { fg = c.polar_night.light },
 
-    BlinkCmpMenuBorder = { fg = c.polar_night.bright },
+    BlinkCmpMenuBorder = { fg = c.polar_night.brightest },
     BlinkCmpMenuSelection = { fg = c.none, bg = c.polar_night.brighter },
     BlinkCmpLabelDeprecated = { fg = c.polar_night.light },
     BlinkCmpLabelMatch = { fg = c.frost.ice, bold = false },

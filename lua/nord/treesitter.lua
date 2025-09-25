@@ -132,6 +132,7 @@ function treesitter.highlights()
     ["@tag"] = { fg = c.frost.artic_water }, --  XML tag names
     ["@tag.attribute"] = { fg = c.frost.polar_water }, --  XML tag attributes
     ["@tag.delimiter"] = { fg = c.frost.artic_water }, --  XML tag delimiters
+    ["@tag.builtin"] = { fg = c.aurora.purple }, -- TSX html tag
 
     -- Conceal
     ["@conceal"] = { fg = c.polar_night.light, bg = c.none }, --  for captures that are only used for concealing
