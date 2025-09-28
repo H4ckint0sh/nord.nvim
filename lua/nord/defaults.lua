@@ -46,9 +46,9 @@ function defaluts.highlights()
     PmenuThumb = { fg = c.frost.ice, bg = c.polar_night.brightest }, -- Popup menu: Thumb of the scrollbar.
     Question = { fg = c.snow_storm.origin }, -- |hit-enter| prompt and yes/no questions
     QuickFixLine = { fg = c.snow_storm.origin, bg = utils.make_global_bg(options.transparent), reverse = true }, -- Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
+    IncSearch = { fg = c.polar_night.origin, bg = c.aurora.yellow },
     Search = options.search.theme == "vscode" and { fg = c.none, bg = utils.darken(c.frost.ice, 0.2) }
-      or { fg = c.frost.ice, bg = utils.make_global_bg(options.transparent), reverse = true }, -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
-    IncSearch = { fg = c.frost.ice },
+      or { fg = c.polar_night.origin, bg = c.frost.ice }, -- Last search pattern highlighting (see 'hlsearch').  Also used for similar items that need to stand out.
     CurSearch = { link = "IncSearch" },
     SpecialKey = { fg = c.polar_night.brightest }, -- Unprintable characters: text displayed differently from what it really is.  But not 'listchars' whitespace. |hl-Whitespace|
     SpellBad = { sp = c.aurora.red, undercurl = true }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
