@@ -1,13 +1,24 @@
 local utils = {}
 local c = require("nord.colors").palette
 
+local theme_cache = {}
+
 function utils.load(...)
+  local args = { ... }
+  local key = vim.inspect(args)
+  if theme_cache[key] then
+    for group, hl in pairs(theme_cache[key]) do
+      vim.api.nvim_set_hl(0, group, hl)
+    end
+    return
+  end
   local highlights = vim.tbl_extend("force", ...)
   local options = require("nord.config").options
   options.on_highlights(highlights, c)
   for group, hl in pairs(highlights) do
     vim.api.nvim_set_hl(0, group, hl)
   end
+  theme_cache[key] = highlights
 end
 
 function utils.make_diff(color)
