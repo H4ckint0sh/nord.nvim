@@ -15,8 +15,13 @@ function snacks.highlights()
     SnacksPickerPathIgnored = { fg = c.snow_storm.origin },
     SnacksPickerGitStatusIgnored = { fg = c.snow_storm.origin },
     SnacksPickerGitStatusUntracked = { fg = c.snow_storm.origin },
-    SnacksDashboardHeader = { fg = c.aurora.green },
-    SnacksDashboardFooter = { fg = c.frost.artic_water },
+    SnacksDashboardHeader = { fg = c.frost.ice },
+    SnacksDashboardFooter = { fg = c.snow_storm.origin },
+    SnacksDashboardDesc = { fg = c.snow_storm.origin },
+    SnacksDashboardIcon = { fg = c.snow_storm.origin },
+    SnacksDashboardFile = { fg = c.snow_storm.origin },
+    SnacksDashboardKey = { fg = c.frost.artic_water },
+    SnacksDashboardSpecial = { fg = c.aurora.yellow },
   }
 end
 
